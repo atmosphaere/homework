@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: local('Playfair Display Medium'), local('PlayfairDisplay-Medium'),
+        url(../fonts/PlayfairDisplay-Medium.woff) format('woff2'),
+        url(../fonts/PlayfairDisplay-Medium.woff2) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
