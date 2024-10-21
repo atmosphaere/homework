@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wake and bake</title>
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -18,21 +17,21 @@
                 <div class="container">
                     <div class="header__top-inner">
                         <a href="index.html" class="header__logo">
-                            <img src="/img/icons/logos/logo-dark.svg" alt="Логотип компании Wake & Bake">
+                            <img src="img/icons/logos/logo-dark.svg" alt="Логотип компании Wake & Bake">
                         </a>
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">Программа обучения</a>
+                                    <a href="#program" class="nav__link">Программа обучения</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">Галерея</a>
+                                    <a href="#gallery" class="nav__link">Галерея</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">Отзывы</a>
+                                    <a href="#testimonials" class="nav__link">Отзывы</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="" class="nav__link">Контакты</a>
+                                    <a href="#contact" class="nav__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -50,25 +49,25 @@
                                 <span>Старт </span>
                                 <span>26.06.2023</span>
                             </div>
-                            <h1 class="hero__title">Научись печь торты и десерты с нуля</h1>
+                            <h1 class="hero__title title">Научись печь торты и десерты с нуля</h1>
                             <p class="hero__text">За 8 практических занятий ты получишь новые возможности
                                 для самореализации и любимое дело</p>
 
                             <div class="hero__img-control hero__img-control--mobile">
-                                <a data-fslightbox="gallery" class="hero__img-button" href="/video/cake.mp4">
-                                    <img src="/img/icons/play.svg" alt="">
+                                <a class="hero__img-button" data-fslightbox="video" href="https://www.youtube.com/embed/x5h-LAvQDCQ">
+                                    <img src="img/icons/play.svg" alt="">
                                 </a>
                                 Посмотри, как готовятся наши торты
                             </div>
 
-                            <a class="hero__button button" href="#">Записаться на курс</a>
+                            <a href="#contact" class="hero__button button">Записаться на курс</a>
                         </div>
 
                         <div class="hero__img">
-                            <img src="/img/content/girl.png" alt="Девушка с тортом в руках">
+                            <img src="img/content/girl.png" alt="Девушка с тортом в руках">
                             <div class="hero__img-control">
-                                <a class="hero__img-button" data-fslightbox="video" href="/video/cake.mp4">
-                                    <img src="/img/icons/play.svg" alt="">
+                                <a class="hero__img-button" data-fslightbox="video" href="https://www.youtube.com/embed/x5h-LAvQDCQ">
+                                    <img src="img/icons/play.svg" alt="">
                                 </a>
                                 Посмотри, как готовятся наши торты
                             </div>
@@ -84,17 +83,17 @@
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__img">
-                            <img src="/img/content/girl-2.png" alt="Девушка с тортом в руках">
+                            <img src="img/content/girl-2.png" alt="Девушка с тортом в руках">
                             <div class="about__img-control">
                                 <a class="about__img-button" href="#">
-                                    <img src="/img/icons/gift.svg" alt="">
+                                    <img src="img/icons/gift.svg" alt="Иконка">
                                 </a>
                                 Нажми на подарок, чтобы получить наш фирменный рецепт
                             </div>
                         </div>
 
                         <div class="about__heading">
-                            <h2 class="about__title">
+                            <h2 class="about__title title">
                                 Наша школа —
                             </h2>
                             <p class="about__title-text">
@@ -146,6 +145,743 @@
                 </div>
             </section>
 
+            <section class="main__program program" id="program">
+                <div class="container">
+                    <div class="program__inner">
+                        <h2 class="program__title title">Программа обучения</h2>
+                        <div class="program__top">
+                            <p class="program__text">Продолжительность курса — 4 недели <br>
+                                Программа обучения состоит из 8 модулей<br>
+                                На каждое занятие отводится по 6 часов </p>
+                            <ul class="tab-control">
+                                <li class="tab-control__item">
+                                    <a href="#tab1" class="tab-control__link tab-control__link--active">
+                                        Неделя 1
+                                    </a>
+                                </li>
+                                <li class="tab-control__item">
+                                    <a href="#tab2" class="tab-control__link">
+                                        Неделя 2
+                                    </a>
+                                </li>
+                                <li class="tab-control__item">
+                                    <a href="#tab3" class="tab-control__link">
+                                        Неделя 3
+                                    </a>
+                                </li>
+                                <li class="tab-control__item">
+                                    <a href="#tab4" class="tab-control__link">
+                                        Неделя 4
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="program__tab-content tab-content tab-content--show" id="tab1">
+
+                            <ul class="accordion-list">
+
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Начало кондитерского пути и создание
+                                            первого торта</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Организация рабочего места
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Подготовка необходимого инвентаря
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Выбор необходимых продуктов
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Советы по закупке необходимых продуктов и инвентаря
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Обзор хранения и заготовки сырья
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Испечёшь морковный торт <br>
+                                                    с солёной карамелью
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Медовик и капкейки</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление и украшение капкейков
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Изготовление крема и конфи
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление медовых коржей для торта
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Пропитка коржей и сборка торта
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Испечёшь капкейки,<br>
+                                                    приготовишь крем и конфи,<br>
+                                                    а также сделаешь своё<br>
+                                                    первое пирожное — медовик
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="program__tab-content tab-content" id="tab2">
+                            <ul class="accordion-list">
+
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Песочное тесто и чизкейк</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление песочного теста
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Тонкости в приготовлении меренги
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Изготовление заварного крема
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Выпечка тарталеток
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление нежного чизкейка
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Приготовишь меренги, <br>
+                                                    сделаешь заварной крем<br>
+                                                    для тарталеток и испечёшь<br>
+                                                    свой первый чизкейк
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Бисквиты</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Тонкости выпечки бисквитов
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление ванильного бисквита
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление фисташкового бисквита
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление шоколадного бисквита
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Отработаешь выпечку трёх <br> бисквитов для будущих тортов
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <div class="program__tab-content tab-content" id="tab3">
+                            <ul class="accordion-list">
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Дрожжевое тесто</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Технология приготовления дрожжевого теста: тонкости и советы
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление песочного теста
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Рецептурные нюансы
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Приготовишь заготовку<br>
+                                                    для торта
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Работа с кремами</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление кремов: ганаши, кремю
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Создание заварного теста
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление профитролей и нескольких видов кремов
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Приготовишь профитроли <br>
+                                                    и несколько видов кремов
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="program__tab-content tab-content" id="tab4">
+                            <ul class="accordion-list">
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Mille-feuille, или Наполеон</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление слоёного теста
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Рецептура и создание крема дипломат
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Приготовление французского морковного десерта
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Испечёте торт «Наполеон» <br>
+                                                    и приготовите необычный<br>
+                                                    морковный десерт
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-list__item">
+                                    <a class="accordion-list__control" href="#">
+                                        <h3 class="accordion-list__control-title">Завершение курса</h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z"
+                                                    fill="#FFA55C" />
+                                                <path
+                                                    d="M12.7598 6.28027L12.7598 7.72027L0.519766 7.72027L0.519766 6.28027L12.7598 6.28027Z"
+                                                    fill="#FFA55C" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion__content">
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Теория:</h6>
+                                                <ul class="accordion__content-list">
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Работа кондитера на заказ
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Применение знаний о технологии выпечки к другим рецептам
+                                                    </li>
+                                                    <li class="accordion__content-item">
+                                                        <img src="img/icons/hat-1.svg" alt=""
+                                                            class="accordion__content-icon">
+                                                        Разработка собственных рецептов
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion__content-col">
+                                                <h6 class="accordion__content-title">Практика:</h6>
+                                                <p class="accordion__content-text">
+                                                    Самостоятельно, без наставника <br>
+                                                    испечёте торт на ваш выбор
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="program__bottom">
+                            <div class="program__action">
+                                <div class="program__discount">
+                                    Успей получить скидку
+                                    <div class="program__discount-value">
+                                        30%
+                                    </div>
+                                    <span>до 1 июня</span>
+                                </div>
+                                <div class="program__price">
+                                    <p class="program__price-text">
+                                        Стоимость курса без скидки
+                                    </p>
+                                    <span class="program__price-value">
+                                        32 000 руб.
+                                    </span>
+                                </div>
+                                <div class="program__price">
+                                    <p class="program__price-text">
+                                        Стоимость курса со скидкой
+                                    </p>
+                                    <span class="program__price-value--big">
+                                        22 400 руб.
+                                    </span>
+                                </div>
+                                <a class="program__action-button button" href="#contact">Оставить заявку</a>
+                            </div>
+                            <div class="program__img">
+                                <img src="img/decor/cake1.png" alt="Шоколадный торт с ягодами">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__gallery gallery" id="gallery">
+                <div class="container">
+                    <div class="gallery__inner">
+                        <div class="gallery__img">
+                            <img src="img/decor/cupcakes.png" alt="">
+                        </div>
+                        <div class="gallery__content">
+                            <div class="gallery__info">
+                                <h2 class="gallery__title title">
+                                    Фотогалерея
+                                </h2>
+                                <p class="gallery__text">
+                                    Для комфортного обучения сделаны просторные аудитории, где предоставляется
+                                    всё необходимое оборудование. Здесь наши ученики создают кулинарные шедевры
+                                    под присмотром опытных наставников
+                                </p>
+                            </div>
+                            <div class="gallery__nav">
+                                <button class="gallery__next" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.992 1.00777L2.016 6.98377L7.992 12.9598L6.984 13.9678L-3.0528e-07 6.98377L6.984 -0.000227365L7.992 1.00777Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M1.0083 7.70312L1.0083 6.26313L13.2483 6.26312L13.2483 7.70312L1.0083 7.70312Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                                <div class="gallery__pagination"></div>
+                                <button class="gallery__prev" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.25653 12.96L11.2325 6.984L5.25654 1.008L6.26454 -3.0528e-07L13.2485 6.984L6.26454 13.968L5.25653 12.96Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery__slider swiper">
+                        <div class="gallery__wrapper swiper-wrapper">
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                                href="img/content/gallery/1.jpg">
+                                <img src="img/content/gallery/1.jpg" alt="Девушка украшает кексы">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                                href="img/content/gallery/2.jpg">
+                                <img src="img/content/gallery/2.jpg"
+                                    alt="Женщина в белом поварском костюме позирует с десертами на столе.">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                                href="img/content/gallery/3.jpg">
+                                <img src="img/content/gallery/3.jpg" alt="Женщина в форме повара украшает торт.">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                                href="img/content/gallery/4.jpg">
+                                <img src="img/content/gallery/4.jpg" alt="Три женщины украшают торт">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                                href="img/content/gallery/2.jpg">
+                                <img src="img/content/gallery/2.jpg"
+                                    alt="Женщина в белом поварском костюме позирует с десертами на столе.">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                                href="img/content/gallery/3.jpg">
+                                <img src="img/content/gallery/3.jpg" alt="Женщина в форме повара украшает торт.">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                                href="img/content/gallery/4.jpg">
+                                <img src="img/content/gallery/4.jpg" alt="Три женщины украшают торт">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__testimonials testimonials" id="testimonials">
+                <div class="container">
+                    <div class="testimonials__inner">
+                        <div class="testimonials__info">
+                            <h2 class="testimonials__title title">
+                                Обратная связь <br>от наших учеников
+                            </h2>
+                            <p class="testimonials__text">
+                                Все наши ученики абсолютно разные, и мы к каждому из них находим индивидуальный подход.
+                                Именно поэтому все остаются довольны не только кулинарными результатами, но и атмосферой
+                                обучения в целом
+                            </p>
+                        </div>
+                        <div class="testimonials__nav">
+                            <button class="testimonials__next" type="button">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.992 1.00777L2.016 6.98377L7.992 12.9598L6.984 13.9678L-3.0528e-07 6.98377L6.984 -0.000227365L7.992 1.00777Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M1.0083 7.70312L1.0083 6.26313L13.2483 6.26312L13.2483 7.70312L1.0083 7.70312Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </button>
+                            <button class="testimonials__prev" type="button">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.25653 12.96L11.2325 6.984L5.25654 1.008L6.26454 -3.0528e-07L13.2485 6.984L6.26454 13.968L5.25653 12.96Z"
+                                        fill="#FFA55C" />
+                                    <path
+                                        d="M12.2402 6.26465L12.2402 7.70465L0.000234839 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                        fill="#FFA55C" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="testimonials__slider swiper">
+                        <div class="testimonials__wrapper swiper-wrapper">
+                            <div class="testimonials__slide swiper-slide">
+                                <div class="testimonials__student">
+                                    <div class="testimonials__student-img">
+                                        <img src="img/content/testimonials/1.jpg" alt="">
+                                    </div>
+                                    <div class="testimonials__student-name">
+                                        Александра
+                                    </div>
+                                    <div class="testimonials__student-inst">
+                                        <img src="img/icons/socials/inst-2.svg" alt="">
+                                        akimovaa
+                                    </div>
+                                </div>
+                                <blockquote class="testimonials__quote">
+                                    <span>
+                                        Спасибо за курс!
+                                    </span>
+                                    Действительно понятный и доступный курс для начинающего кондитера. Для того самого,
+                                    который ничего-ничего не знал, не умел. А спустя месяц уже знает, как сделать так,
+                                    чтобы было вкусно, красиво и профессионально. А если что-то и непонятно, то всегда
+                                    можно спросить и уточнить.
+                                </blockquote>
+                            </div>
+                            <div class="testimonials__slide swiper-slide">
+                                <div class="testimonials__student">
+                                    <div class="testimonials__student-img">
+                                        <img src="img/content/testimonials/2.jpg" alt="">
+                                    </div>
+                                    <div class="testimonials__student-name">
+                                        Елизавета
+                                    </div>
+                                    <div class="testimonials__student-inst">
+                                        <img src="img/icons/socials/inst-2.svg" alt="">
+                                        lizzy_av
+                                    </div>
+                                </div>
+                                <blockquote class="testimonials__quote">
+                                    <span>
+                                        Для меня действительно сбылась мечта!
+                                    </span>
+                                    Это были одни из лучших месяцев моей жизни. Для меня действительно сбылась мечта,
+                                    к которой я шла уже давно, но не хватало опыта и знаний. Это все дала мне ваша
+                                    школа. В рецептурах все довольно понятно разъясняется, если есть вопросы, их всегда
+                                    можно задать, что не мало важно.
+                                </blockquote>
+                            </div>
+                            <div class="testimonials__slide swiper-slide">
+                                <div class="testimonials__student">
+                                    <div class="testimonials__student-img">
+                                        <img src="img/content/testimonials/3.jpg" alt="">
+                                    </div>
+                                    <div class="testimonials__student-name">
+                                        игорь
+                                    </div>
+                                    <div class="testimonials__student-inst">
+                                        <img src="img/icons/socials/inst-2.svg" alt="">
+                                        igor_sverlovskii
+                                    </div>
+                                </div>
+                                <blockquote class="testimonials__quote">
+                                    <span>
+                                        Здесь я узнал много чего нового!
+                                    </span>
+                                    Спасибо большое Wake & Bake за такой курс! Здесь я узнал много чего нового для меня!
+                                    Курс очень хороший, захватывает самые актуальные темы для кондитера! Мне понравилось
+                                    что всегда была поддержка не только со стороны куратора
+                                    но и таких же учеников-кондитеров как и я. Мне прям аж будет не хватать всего этого.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="testimonials__scrollbar swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <div class="contact__img">
+                            <img src="img/decor/cake-2.png" alt="">
+                        </div>
+                        <div class="contact__body">
+                            <h2 class="contact__title title">
+                                Оставить заявку на обучение
+                            </h2>
+                            <p class="contact__text">
+                                Заполни контактные данные, и наш менеджер свяжется с тобой в ближайшее время
+                            </p>
+                            <form class="contact__form">
+                                <label class="contact__label field">
+                                    <input class="contact__input field__input" type="text" placeholder="Имя">
+                                    <span>Введите имя</span>
+                                </label>
+                                <input class="contact__input" type="tel" placeholder="Телефон">
+                                <label class="contact__check-label">
+                                    <input class="contact__checkbox" type="checkbox">
+                                    <span>
+                                        Нажимая на кнопку, вы соглашаетесь <br> с
+                                        <a href="#" target="_blank">политикой конфиденциальности</a>
+                                    </span>
+                                </label>
+                                <button class="button" type="submit">
+                                    Записаться на курс
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
         </main>
 
@@ -155,7 +891,7 @@
                 <div class="footer__inner">
                     <div class="footer__col">
                         <a class="footer__logo">
-                            <img src="/img/icons/logos/logo-light.svg" alt="Логотип компании Wake & Bake"
+                            <img src="img/icons/logos/logo-light.svg" alt="Логотип компании Wake & Bake"
                                 class="footer__logo-img">
                         </a>
                         <p class="footer__logo-text">Школа кондитерского искусства</p>
@@ -205,17 +941,17 @@
                     <div class="footer__col">
                         <ul class="footer__col-list">
                             <li class="footer__col-item">
-                                <a href="#" class="footer__col-link">
+                                <a href="#program" class="footer__col-link">
                                     Программа обучения
                                 </a>
                             </li>
                             <li class="footer__col-item">
-                                <a href="#" class="footer__col-link">
+                                <a href="#gallery" class="footer__col-link">
                                     Галерея
                                 </a>
                             </li>
                             <li class="footer__col-item">
-                                <a href="#" class="footer__col-link">
+                                <a href="#testimonials" class="footer__col-link">
                                     Отзывы
                                 </a>
                             </li>
@@ -241,7 +977,7 @@
                             </a>
                         </address>
                         <div class="footer__col-copy">
-                            <img src="/img/icons/copyright.svg" alt="">
+                            <img src="img/icons/copyright.svg" alt="">
                             Все права защищены
                         </div>
 
@@ -254,15 +990,15 @@
 
     <div class="modal">
         <div class="modal__window">
-            <a href="#" class="modal__cancel">
+            <button class="modal__cancel">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25" stroke="#E1D9E1" stroke-width="1.5" />
                     <path
                         d="M6.75781 17.2433L12.0008 12.0003L17.2438 17.2433M17.2438 6.75732L11.9998 12.0003L6.75781 6.75732"
                         stroke="#E1D9E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-            </a>
-            <img src="/img/decor/cupcakes-modal.png" class="modal__img">
+            </button>
+            <img class="modal__img" src="img/decor/cupcakes-modal.png" alt="Капкейки" >
             <h2 class="modal__title">Удиви своих близких вкусными капкейками </h2>
             <p class="modal__text">Оставь свой e-mail, и мы вышлем рецепт на почту
             </p>
@@ -277,6 +1013,8 @@
     </div>
 
     <script src="js/fslightbox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
