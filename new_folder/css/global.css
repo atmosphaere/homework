@@ -1,0 +1,222 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --base-green: #07af91;
+    --base-blue: #1178b2;
+    --dark-blue: #2a79c2;
+    --border-radius: 10px;
+    --linear-gradient: linear-gradient(321deg, #016ca8 0%, #61b5e4 100%);
+    --margin--bottom: 100px;
+    --transition: all .3s ;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+}
+
+.body {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000;
+}
+
+.body-opened--modal .modal {
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.header,
+.main__services,
+.main__consultation,
+.main__countries,
+.main__accelerator,
+.main__team,
+.accelerator__program,
+.accelerator__entry,
+.accelerator__result,
+.accelerator__price,
+.servises__accelerator-content,
+.team__about,
+.team__founder,
+.team__gallery,
+.team__partners,
+.team__experts,
+.team__cooperation,
+.activity__events {
+    margin-bottom: var(--margin--bottom);
+}
+
+.activity__contacts {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 222%;
+    color: var(--base-blue);
+}
+
+.button {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 444%;
+    color: #fff;
+    border-radius: var(--border-radius);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.number {
+    font-family: var(--font-family);
+    font-weight: 800;
+    color: rgba(17, 120, 178, 0.5);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* **************** */
+/* MODAL */
+/* **************** */
+
+.modal {
+    position: fixed;
+    background: #00000071;
+    z-index: 10;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+
+.modal__window {
+    display: flex;
+    border-radius: 5px;
+    padding: 4px 30px;
+    max-width: 640px;
+    background: #fff;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__cancel {
+    position: absolute;
+    top: -27px;
+    right: 0px;
+    background: transparent;
+}
+
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+    stroke: var(--base-green);
+}
+
+.modal__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 500%;
+    color: #000;
+}
+
+.modal__registration {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 667%;
+    text-decoration: underline;
+    color: var(--base-green);
+    display: flex;
+    justify-content: center;
+}
+
+.modal__form {
+    max-width: 580px;
+    width: 100%;
+}
+
+.modal__form-label {
+    position: relative;
+    display: block;
+}
+
+.modal__input {
+    display: block;
+    border-radius: 5px;
+    max-width: 260px;
+    width: 100%;
+    background: #f1f1f1;
+    line-height: 571%;
+    max-width: 580px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 21px;
+}
+
+.modal__input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 571%;
+    color: #707070;
+}
+.modal__input:hover::placeholder {
+    color: #000;
+}
+
+.modal__button {
+    max-width: 580px;
+    width: 100%;
+    max-height: 80px;
+    background-color: var(--base-green);
+    color: #fff;
+}
+.modal__button:hover{
+    background: #09947B;
+}

@@ -1,0 +1,154 @@
+.header {
+    background: url('../image/background/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    max-width: 149px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 52px;
+}
+
+.navigation__item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 444%;
+    color: #fff;
+    transition: all .3s;
+}
+
+.navigation__item:hover {
+    transform: scale(1.2);
+}
+
+/* mobile */
+
+.header__nav.opened {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--base-green);
+    padding: 68px 99px;
+    max-height: 410px;
+}
+
+.opened .navigation__list {
+    flex-direction: column;
+    text-align: center;
+}
+
+.opened .navigation__item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.52);
+}
+
+.opened .navigation__link {
+    padding: 10px 16px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 500%;
+    color: #fff;
+}
+
+/* ***** */
+
+.header__button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.header__button {
+    width: 149px;
+    max-height: 55px;
+    background: var(--base-green);
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.header__button:hover {
+    background: #09947B;
+}
+
+.hero {
+    padding: 140px 0 300px;
+}
+
+.hero__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 138%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero__title span,
+.hero__title--mobile span {
+    background-color: var(--base-green);
+}
+
+.hero__title--mobile {
+    display: none;
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 36px;
+    line-height: 165%;
+    text-transform: uppercase;
+}
+
+.hero__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 235%;
+    color: #fff;
+}
+
+.hero__text--mobile {
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 444%;
+    color: #fff;
+    display: none;
+}
+
+.hero__text--mobile span {
+    font-weight: 700;
+    color: var(--base-green);
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.hero__button {
+    background: var(--linear-gradient);
+    font-size: 20px;
+    line-height: 400%;
+    width: 219px;
+    max-height: 80px;
+}
+
+.hero__button:hover {
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
