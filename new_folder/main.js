@@ -149,13 +149,11 @@ const swiper = new Swiper('.experts-gallery', {
 
     on: {
         slideChangeTransitionEnd: function() {
-            // Принудительная установка transform
             this.setWrapperTranslate(0);
         }
     }
 });
 
-// Отключаем стандартную анимацию Swiper
 swiper.params.speed = 0;
 
 
