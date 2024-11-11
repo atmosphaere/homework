@@ -131,8 +131,8 @@ let swiper = new Swiper(".team__experts-gallery", {
     spaceBetween: 37,
 
     navigation: {
-        nextEl: ".experts-gallery__next",
-        prevEl: ".experts-gallery__prev",
+        nextEl: ".team__experts-navigation-next",
+        prevEl: ".team__experts-navigation-prev",
     },
 
     breakpoints: {
@@ -148,7 +148,7 @@ let swiper = new Swiper(".team__experts-gallery", {
         },
 
         1151: {
-            slidesPerView: 4,
+            slidesPerView: 'auto',
             spaceBetween: 37,
         },
     },
