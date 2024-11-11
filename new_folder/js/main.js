@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
 
     openModalBtn.addEventListener('click', function (event) {
-        event.stopPropagation(); 
+        event.stopPropagation();
         body.classList.add('body-opened--modal');
     });
 
@@ -106,16 +106,13 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
     const teamGallerySwiper = new Swiper('.swiper-team', {
 
-        slidesPerView: 5,
+        slidesPerView: 2.8,
         loop: true,
         navigation: false,
         pagination: false,
 
         breakpoints: {
             650: {
-                slidesPerView: 2.8,
-            },
-            800: {
                 slidesPerView: 3.2,
             },
             801: {
@@ -128,26 +125,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // SWIPER__EXPERTS
 
-new Swiper('.experts-gallery', {
+let swiper = new Swiper(".team__experts-gallery", {
+    slidesPerView: 1.5,
+    loop: true, 
     spaceBetween: 37,
-    slidesPerView: 4,
-    centeredSlides: true,
-    loop: true,
 
     navigation: {
-        nextEl: '.experts-gallery__prev',
-        prevEl: '.experts-gallery__next',
+        nextEl: ".experts-gallery__next",
+        prevEl: ".experts-gallery__prev",
     },
 
     breakpoints: {
+
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 68,
+        },
+
         900: {
-            slidesPerView: 2.5,
-            width: 240,
+            slidesPerView: 3,
+            spaceBetween: 37,
         },
-        1201: {
-            slidesPerView: 2.1,
+
+        1151: {
+            slidesPerView: 4,
+            spaceBetween: 37,
         },
-    }
+    },
 });
 
 
