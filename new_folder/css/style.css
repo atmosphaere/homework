@@ -1031,23 +1031,14 @@
 }
 
 .team__experts-gallery {
-    width: auto;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    width: 1054px;
 }
 
-.experts-gallery-wrapper.swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    max-width: 1054px;
-    transition: transform 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.experts-gallery__slide.swiper-slide {
-    max-width: 230px !important;
+.experts-gallery__slide {
+    max-width: 230px;
 }
 
 .experts-gallery__slide img {
@@ -1079,52 +1070,47 @@
     color: #000;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.team__experts-navigation {
+    position: relative;
+}
+
+.team__experts-navigation-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 9;
     cursor: pointer;
-    background-color: transparent;
-    background-image: none !important;
-    color: transparent !important;
-    border: none !important;
-    outline: none !important;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-    opacity: 0.9;
-}
-
-.swiper-button-disabled {
-    opacity: 0.35;
-    pointer-events: none;
-}
-
-.swiper-button-prev::before {
-    content: '';
-    background-image: url('../image/icons/arrow_prev.svg') !important;
+    background-image: url('../image/icons/arrow_prev.svg');
     display: block;
     width: 39px;
     height: 39px;
-    position: absolute;
     left: -10px;
 }
 
-.swiper-button-next::after {
-    content: '';
-    background-image: url('../image/icons/arrow__next.svg') !important;
+.team__experts-navigation-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    cursor: pointer;
+    background-image: url('../image/icons/arrow__next.svg');
     display: block;
     width: 39px;
     height: 40px;
-    position: absolute;
     right: -10px;
 }
 
 
+.team__experts-navigation-prev:hover,
+.team__experts-navigation-next:hover {
+    opacity: 0.9;
+}
 
+.team__experts-navigation-prev:disabled,
+.team__experts-navigation-next:disabled {
+    opacity: 0.35;
+    pointer-events: none;
+}
 
 /* *********** */
 /*  PARTNERS */
@@ -2755,8 +2741,8 @@
 }
 
 @media (max-width: 320px) {
-    
-    .experts-gallery__slide.swiper-slide {
+
+    .experts-gallery__slide {
         width: 204px !important;
     }
 }
