@@ -49,12 +49,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // COUNTRIES-SWITCH
 
-document.querySelectorAll('.countries__item').forEach(item => {
-    item.addEventListener('click', () => {
-        document.querySelectorAll('.countries__item').forEach(item => {
-            item.classList.remove('countries__item--active');
+document.querySelectorAll('.countries__item').forEach((item) => {
+    item.addEventListener('click', function() {
+        const tabGroupClass = this.dataset.tabgroup; 
+        
+        document.querySelectorAll('.countries__item').forEach((el) => {
+            el.classList.remove('countries__item--active');
         });
-        item.classList.add('countries__item--active');
+        
+        this.classList.add('countries__item--active');
+        
+        document.querySelectorAll('.tabs-group').forEach((tab) => {
+            tab.classList.remove('tabs-group--active'); 
+        });
+        
+        const activeTab = document.querySelector(`#${this.id}-content`); 
+        if (activeTab) {
+            activeTab.classList.add('tabs-group--active'); 
+        }
     });
 });
 
@@ -105,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', () => {
     const teamGallerySwiper = new Swiper('.swiper-team', {
-
         slidesPerView: 2.8,
         loop: true,
         navigation: false,
@@ -137,14 +148,14 @@ let swiper = new Swiper(".team__experts-gallery", {
 
     breakpoints: {
 
-        768: {
-            slidesPerView: 4,
-            spaceBetween: 68,
+        550: {
+            slidesPerView: 2.5,
+            spaceBetween: 37,
         },
 
-        900: {
+        768: {
             slidesPerView: 3,
-            spaceBetween: 37,
+            spaceBetween: 68,
         },
 
         1151: {
