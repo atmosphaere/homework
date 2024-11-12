@@ -172,67 +172,241 @@
                     <div class="countries__inner">
                         <h2 class="countries__title title">С какими рынками мы работаем?</h2>
                         <ul class="countries__list">
-                            <li class="countries__item">Ближний восток</li>
-                            <li class="countries__item">Азия</li>
-                            <li class="countries__item">Латинская Америка</li>
-                            <li class="countries__item">Африка</li>
+                            <li class="countries__item countries__item--active" data-tabgroup="first-tabs-group" id="first-control">Ближний восток</li>
+                            <li class="countries__item" data-tabgroup="second-tabs-group" id="second-control">Азия</li>
+                            <li class="countries__item" data-tabgroup="third-tabs-group" id="third-control">Латинская Америка</li>
+                            <li class="countries__item" data-tabgroup="fourth-tabs-group" id="fourth-control">Африка</li>
                         </ul>
 
-                        <div class="countries__grid">
-                            <div class="countries__grid-cul">
-                                <h3 class="countries__subtitle">Чем интересен<br>
-                                    <span>Рынок MENA:</span>
-                                </h3>
-                                <p class="countries__text">ОАЭ, Саудовская Аравия,<br>
-                                    Израиль, Оман, Бахрейн, Катар,<br>
-                                    Тунис, Йемен, Египет, Алжир</p>
-                                <button class="countries__button button">
-                                    Выйти на рынок
-                                </button>
-                                <div class="countries__manager">
-                                    <img src="image/crew/fatima.png" alt="">
-                                    <div class="info-wrapper">
-                                        <h3 class="countries__manager-name">Фатима</h3>
-                                        <span>Менеджер по MENA</span>
+                        <div class="first-tabs-group tabs-group tabs-group--active" id="first-control-content">
+                            <div class="countries__grid">
+                                <div class="countries__grid-cul">
+                                    <h3 class="countries__subtitle">Чем интересен<br>
+                                        <span>Рынок MENA:</span>
+                                    </h3>
+                                    <p class="countries__text">ОАЭ, Саудовская Аравия,<br>
+                                        Израиль, Оман, Бахрейн, Катар,<br>
+                                        Тунис, Йемен, Египет, Алжир</p>
+                                    <button class="countries__button button">
+                                        Выйти на рынок
+                                    </button>
+                                    <div class="countries__manager">
+                                        <img src="image/crew/fatima.png" alt="">
+                                        <div class="info-wrapper">
+                                            <h3 class="countries__manager-name">Фатима</h3>
+                                            <span>Менеджер по MENA</span>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <ul class="countries__report-list">
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>5,5 <span
+                                                class="coutries__report-count">Млрд</span>
+                                        </span>
+                                        Инвестиции pre-seed, seed
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>300</span>
+                                        Акселераторов, инкубаторов
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">73</span>
+                                        Венчурных фонда
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.6691 17.4276C12.0596 17.8181 12.6928 17.8181 13.0833 17.4276L19.4473 11.0636C19.8378 10.6731 19.8378 10.0399 19.4473 9.64941C19.0568 9.25889 18.4236 9.25889 18.0331 9.64941L12.3762 15.3063L6.71937 9.64941C6.32884 9.25889 5.69568 9.25889 5.30515 9.64941C4.91463 10.0399 4.91463 10.6731 5.30515 11.0636L11.6691 17.4276ZM11.3762 -6.11959e-08L11.3762 16.7205L13.3762 16.7205L13.3762 6.11959e-08L11.3762 -6.11959e-08Z"
+                                                fill="white" />
+                                            <line x1="23.7526" y1="21.8459" x2="1" y2="21.8459" stroke="white"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+
+                                        <a href="#" class="countries__report-link" target="_blank">
+                                            Скачать отчет
+                                            по рынку MENA
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="countries__button countries__button--mobile button">
+                                    Выйти на рынок
+                                </button>
                             </div>
-
-                            <ul class="countries__report-list">
-                                <li class="countries__report-item">
-                                    <span class="countries__report-number number">>5,5 <span
-                                            class="coutries__report-count">Млрд</span>
-                                    </span>
-                                    Инвестиции pre-seed, seed
-                                </li>
-                                <li class="countries__report-item">
-                                    <span class="countries__report-number number">>300</span>
-                                    Акселераторов, инкубаторов
-                                </li>
-                                <li class="countries__report-item">
-                                    <span class="countries__report-number number">73</span>
-                                    Венчурных фонда
-                                </li>
-                                <li class="countries__report-item">
-                                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.6691 17.4276C12.0596 17.8181 12.6928 17.8181 13.0833 17.4276L19.4473 11.0636C19.8378 10.6731 19.8378 10.0399 19.4473 9.64941C19.0568 9.25889 18.4236 9.25889 18.0331 9.64941L12.3762 15.3063L6.71937 9.64941C6.32884 9.25889 5.69568 9.25889 5.30515 9.64941C4.91463 10.0399 4.91463 10.6731 5.30515 11.0636L11.6691 17.4276ZM11.3762 -6.11959e-08L11.3762 16.7205L13.3762 16.7205L13.3762 6.11959e-08L11.3762 -6.11959e-08Z"
-                                            fill="white" />
-                                        <line x1="23.7526" y1="21.8459" x2="1" y2="21.8459" stroke="white"
-                                            stroke-width="2" stroke-linecap="round" />
-                                    </svg>
-
-                                    <a href="#" class="countries__report-link" target="_blank">
-                                        Скачать отчет
-                                        по рынку MENA
-                                    </a>
-                                </li>
-                            </ul>
-                            <button class="countries__button countries__button--mobile button">
-                                Выйти на рынок
-                            </button>
                         </div>
+                        <div class="second-tabs-group tabs-group" id="second-control-content">
+                            <div class="countries__grid">
+                                <div class="countries__grid-cul">
+                                    <h3 class="countries__subtitle">Чем интересен<br>
+                                        <span>Рынок MENA:</span>
+                                    </h3>
+                                    <p class="countries__text">ОАЭ, Саудовская Аравия,<br>
+                                        Израиль, Оман, Бахрейн, Катар,<br>
+                                        Тунис, Йемен, Египет, Алжир</p>
+                                    <button class="countries__button button">
+                                        Выйти на рынок
+                                    </button>
+                                    <div class="countries__manager">
+                                        <img src="image/crew/donnavhan.png" alt="">
+                                        <div class="info-wrapper">
+                                            <h3 class="countries__manager-name">Доннаван</h3>
+                                            <span>Менеджер по MENA</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="countries__report-list">
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>5,5 <span
+                                                class="coutries__report-count">Млрд</span>
+                                        </span>
+                                        Инвестиции pre-seed, seed
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>300</span>
+                                        Акселераторов, инкубаторов
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">73</span>
+                                        Венчурных фонда
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.6691 17.4276C12.0596 17.8181 12.6928 17.8181 13.0833 17.4276L19.4473 11.0636C19.8378 10.6731 19.8378 10.0399 19.4473 9.64941C19.0568 9.25889 18.4236 9.25889 18.0331 9.64941L12.3762 15.3063L6.71937 9.64941C6.32884 9.25889 5.69568 9.25889 5.30515 9.64941C4.91463 10.0399 4.91463 10.6731 5.30515 11.0636L11.6691 17.4276ZM11.3762 -6.11959e-08L11.3762 16.7205L13.3762 16.7205L13.3762 6.11959e-08L11.3762 -6.11959e-08Z"
+                                                fill="white" />
+                                            <line x1="23.7526" y1="21.8459" x2="1" y2="21.8459" stroke="white"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+
+                                        <a href="#" class="countries__report-link" target="_blank">
+                                            Скачать отчет
+                                            по рынку MENA
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="countries__button countries__button--mobile button">
+                                    Выйти на рынок
+                                </button>
+                            </div>
+                        </div>
+                        <div class="third-tabs-group tabs-group" id="third-control-content">
+                            <div class="countries__grid">
+                                <div class="countries__grid-cul">
+                                    <h3 class="countries__subtitle">Чем интересен<br>
+                                        <span>Рынок MENA:</span>
+                                    </h3>
+                                    <p class="countries__text">ОАЭ, Саудовская Аравия,<br>
+                                        Израиль, Оман, Бахрейн, Катар,<br>
+                                        Тунис, Йемен, Египет, Алжир</p>
+                                    <button class="countries__button button">
+                                        Выйти на рынок
+                                    </button>
+                                    <div class="countries__manager">
+                                        <img src="image/crew/abrams.png" alt="">
+                                        <div class="info-wrapper">
+                                            <h3 class="countries__manager-name">Абрамс</h3>
+                                            <span>Менеджер по MENA</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="countries__report-list">
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>5,5 <span
+                                                class="coutries__report-count">Млрд</span>
+                                        </span>
+                                        Инвестиции pre-seed, seed
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>300</span>
+                                        Акселераторов, инкубаторов
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">73</span>
+                                        Венчурных фонда
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.6691 17.4276C12.0596 17.8181 12.6928 17.8181 13.0833 17.4276L19.4473 11.0636C19.8378 10.6731 19.8378 10.0399 19.4473 9.64941C19.0568 9.25889 18.4236 9.25889 18.0331 9.64941L12.3762 15.3063L6.71937 9.64941C6.32884 9.25889 5.69568 9.25889 5.30515 9.64941C4.91463 10.0399 4.91463 10.6731 5.30515 11.0636L11.6691 17.4276ZM11.3762 -6.11959e-08L11.3762 16.7205L13.3762 16.7205L13.3762 6.11959e-08L11.3762 -6.11959e-08Z"
+                                                fill="white" />
+                                            <line x1="23.7526" y1="21.8459" x2="1" y2="21.8459" stroke="white"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+
+                                        <a href="#" class="countries__report-link" target="_blank">
+                                            Скачать отчет
+                                            по рынку MENA
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="countries__button countries__button--mobile button">
+                                    Выйти на рынок
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fourth-tabs-group tabs-group" id="fourth-control-content">
+                            <div class="countries__grid">
+                                <div class="countries__grid-cul">
+                                    <h3 class="countries__subtitle">Чем интересен<br>
+                                        <span>Рынок MENA:</span>
+                                    </h3>
+                                    <p class="countries__text">ОАЭ, Саудовская Аравия,<br>
+                                        Израиль, Оман, Бахрейн, Катар,<br>
+                                        Тунис, Йемен, Египет, Алжир</p>
+                                    <button class="countries__button button">
+                                        Выйти на рынок
+                                    </button>
+                                    <div class="countries__manager">
+                                        <img src="image/crew/kim.png" alt="">
+                                        <div class="info-wrapper">
+                                            <h3 class="countries__manager-name">Ким</h3>
+                                            <span>Менеджер по MENA</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="countries__report-list">
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>5,5 <span
+                                                class="coutries__report-count">Млрд</span>
+                                        </span>
+                                        Инвестиции pre-seed, seed
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">>300</span>
+                                        Акселераторов, инкубаторов
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <span class="countries__report-number number">73</span>
+                                        Венчурных фонда
+                                    </li>
+                                    <li class="countries__report-item">
+                                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.6691 17.4276C12.0596 17.8181 12.6928 17.8181 13.0833 17.4276L19.4473 11.0636C19.8378 10.6731 19.8378 10.0399 19.4473 9.64941C19.0568 9.25889 18.4236 9.25889 18.0331 9.64941L12.3762 15.3063L6.71937 9.64941C6.32884 9.25889 5.69568 9.25889 5.30515 9.64941C4.91463 10.0399 4.91463 10.6731 5.30515 11.0636L11.6691 17.4276ZM11.3762 -6.11959e-08L11.3762 16.7205L13.3762 16.7205L13.3762 6.11959e-08L11.3762 -6.11959e-08Z"
+                                                fill="white" />
+                                            <line x1="23.7526" y1="21.8459" x2="1" y2="21.8459" stroke="white"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+
+                                        <a href="#" class="countries__report-link" target="_blank">
+                                            Скачать отчет
+                                            по рынку MENA
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="countries__button countries__button--mobile button">
+                                    Выйти на рынок
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -748,61 +922,61 @@
                         <article class="team__experts">
                             <h2 class="team__experts-title title">Эксперты и трекеры программы</h2>
                             <div class="team__experts-navigation">
-                            <div class="team__experts-gallery experts-gallery swiper">
-                                <div class="experts-gallery-wrapper swiper-wrapper">
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/kim.png" alt="">
-                                        <h4 class="experts-gallery__name">Юрий Ким</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
-                                    </div>
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/abrams.png" alt="">
-                                        <h4 class="experts-gallery__name">Эшли Абрамс</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
-                                    </div>
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/fatima.png" alt="">
-                                        <h4 class="experts-gallery__name">Фатими Юсуф</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
-                                    </div>
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/donnavhan.png" alt="">
-                                        <h4 class="experts-gallery__name">Майкл Донован</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
-                                    </div>
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/kim.png" alt="">
-                                        <h4 class="experts-gallery__name">Юрий Ким</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
-                                    </div>
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/abrams.png" alt="">
-                                        <h4 class="experts-gallery__name">Эшли Абрамс</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
-                                    </div>
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/fatima.png" alt="">
-                                        <h4 class="experts-gallery__name">Фатими Юсуф</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
-                                    </div>
-                                    <div class="experts-gallery__slide swiper-slide">
-                                        <img src="image/crew/donnavhan.png" alt="">
-                                        <h4 class="experts-gallery__name">Майкл Донован</h4>
-                                        <p class="experts-gallery__info">Проведение исследования целевой аудитории
-                                            позволит сформировать Product market fit</p>
+                                <div class="team__experts-gallery experts-gallery swiper">
+                                    <div class="experts-gallery-wrapper swiper-wrapper">
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/kim.png" alt="">
+                                            <h4 class="experts-gallery__name">Юрий Ким</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/abrams.png" alt="">
+                                            <h4 class="experts-gallery__name">Эшли Абрамс</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/fatima.png" alt="">
+                                            <h4 class="experts-gallery__name">Фатими Юсуф</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/donnavhan.png" alt="">
+                                            <h4 class="experts-gallery__name">Майкл Донован</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/kim.png" alt="">
+                                            <h4 class="experts-gallery__name">Юрий Ким</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/abrams.png" alt="">
+                                            <h4 class="experts-gallery__name">Эшли Абрамс</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/fatima.png" alt="">
+                                            <h4 class="experts-gallery__name">Фатими Юсуф</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
+                                        <div class="experts-gallery__slide swiper-slide">
+                                            <img src="image/crew/donnavhan.png" alt="">
+                                            <h4 class="experts-gallery__name">Майкл Донован</h4>
+                                            <p class="experts-gallery__info">Проведение исследования целевой аудитории
+                                                позволит сформировать Product market fit</p>
+                                        </div>
                                     </div>
                                 </div>
-                                    <div class="team__experts-navigation-prev">
-                                    </div>
-                                    <div class="team__experts-navigation-next">
-                                    </div>
+                                <div class="team__experts-navigation-prev">
+                                </div>
+                                <div class="team__experts-navigation-next">
                                 </div>
                             </div>
                         </article>
