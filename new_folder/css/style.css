@@ -254,6 +254,14 @@
     background-size: calc(50% - 10px);
 }
 
+.tabs-group {
+    display: none;
+}
+
+.tabs-group--active {
+    display: flex;
+}
+
 .countries__grid-col {
     max-width: 345px;
     width: 100%;
@@ -410,6 +418,9 @@
     bottom: 0;
     left: 0;
 }
+
+/* **** */
+
 
 /* *********** */
 /* ACCELERATOR */
@@ -610,13 +621,17 @@
 }
 
 .program__modul-list {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     padding-left: 15px;
+    transition: all 0.5s linear;
 }
 
 .program__modul-list.active {
-    display: block;
+    max-height: 360px;
+    transition: all 0.5s linear;
 }
+
 
 /* ****** */
 
@@ -1039,10 +1054,13 @@
 
 .experts-gallery__slide {
     max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .experts-gallery__slide img {
-    width: 100%;
+    width: 186px;
     height: auto;
     transition: var(--transition);
 }
@@ -1104,12 +1122,6 @@
 .team__experts-navigation-prev:hover,
 .team__experts-navigation-next:hover {
     opacity: 0.9;
-}
-
-.team__experts-navigation-prev:disabled,
-.team__experts-navigation-next:disabled {
-    opacity: 0.35;
-    pointer-events: none;
 }
 
 /* *********** */
@@ -1495,6 +1507,10 @@
         gap: 49px;
     }
 
+    /* *** */
+    .team__experts-gallery {
+        width: 890px;
+    }
 
     /* *** */
 
@@ -1845,29 +1861,24 @@
 
     /* **** */
 
-    .swiper {
+    .team__experts-gallery {
         padding-bottom: 50px;
     }
 
-    .swiper-slide.experts-gallery__slide {
-        width: 230px !important;
-    }
-
-    .swiper-button-prev::before,
-    .swiper-button-next::after {
+    .team__experts-navigation-prev {
+        background-image: url('../image/icons/arrow_left.svg');
         background-repeat: no-repeat;
-        width: 154px;
-        bottom: -450%;
-    }
-
-    .swiper-button-prev::before {
-        background-image: url('../image/icons/arrow_left.svg') !important;
+        top: 100%;
         left: 0;
+        width: 154px;
     }
 
-    .swiper-button-next::after {
-        background-image: url('../image/icons/arrow_right.svg') !important;
-        right: -75px;
+    .team__experts-navigation-next {
+        background-image: url('../image/icons/arrow_right.svg');
+        background-repeat: no-repeat;
+        top: 100%;
+        right: -70px;
+        width: 154px;
     }
 
     /* **** */
@@ -2698,18 +2709,10 @@
     }
 
     .swiper-slide.experts-gallery__slide {
-        width: 204px !important;
-    }
-
-    .swiper-button-prev::before,
-    .swiper-button-next::after {
-        background-repeat: no-repeat;
-        width: 86px;
-        bottom: -400%;
-    }
-
-    .swiper-button-next::after {
-        right: 15px;
+        width: 204px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .experts-gallery__info {
