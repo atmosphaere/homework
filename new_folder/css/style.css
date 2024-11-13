@@ -2143,12 +2143,18 @@
 
 @media (max-width: 700px) {
 
+    .header__top {
+        flex-wrap: nowrap;
+    }
+
     .header__nav {
-        display: none;
+        max-height: 0;
+        overflow: hidden;
     }
 
     .menu-btn {
         display: block;
+        max-height: 360px;
     }
 
     .header__button {
@@ -2728,6 +2734,14 @@
     .experts-gallery__slide img {
         max-width: 150px;
     }
+
+    /* **** */
+
+
+    .activity__contacts {
+        margin-bottom: 40px;
+    }
+
 
     /* **** */
 
