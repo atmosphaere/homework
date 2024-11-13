@@ -12,9 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     burgerButton.addEventListener('click', function () {
         if (!mobileNav.classList.contains('opened')) {
+            // Открытие меню
+            mobileNav.style.transition = 'max-height 0.6s linear';
             mobileNav.classList.add('opened');
         } else {
+            // Закрытие меню
             mobileNav.classList.remove('opened');
+            mobileNav.style.transition = '';  // Отключение перехода при закрытии
         }
     });
 });
